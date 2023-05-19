@@ -18,14 +18,6 @@ export class RegistrarGeneroComponent implements OnInit {
     
   }
 
-  /*
-  guardarGenero(){
-    this.generoServicio.registrarGenero(this.genero).subscribe(dato => {
-      console.log(dato);
-      this.irListaGeneros();
-    },error => console.log(error));
-  }*/
-
   guardarGenero(){
     swal({
       title: 'GUARDAR ESTILO MUSICAL',
@@ -34,8 +26,8 @@ export class RegistrarGeneroComponent implements OnInit {
       showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
-      confirmButtonText: 'Siiii',
-      cancelButtonText: 'Noo',
+      confirmButtonText: 'Si',
+      cancelButtonText: 'No',
       cancelButtonClass: 'btn btn-danger',
       buttonsStyling: true
     }).then((result) => {
