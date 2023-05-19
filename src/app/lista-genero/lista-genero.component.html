@@ -1,0 +1,7 @@
+<div class="container" style="max-width: 300px">
+    <h2 class="text-center">RESULTADOS</h2>
+    <div class="progress" *ngFor="let genero of generos" style="height: 30px; border-radius: 45%; margin: 20px">
+        <div class="progress-bar" role="progressbar" [ngStyle]="{'width':genero.email}"><h6>{{genero.estilo}}</h6></div>
+    </div>
+    
+</div>
