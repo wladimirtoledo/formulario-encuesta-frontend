@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import swal from 'sweetalert2';
 
 @Component({
   selector: 'app-info-genero',
@@ -15,5 +16,19 @@ export class InfoGeneroComponent {
   }
   public changeBgGrey(): void {
     document.body.style.backgroundColor = "";
+  }
+
+
+  verDetalle(){
+
+    swal({
+      title: 'WLADIMIR TOLEDO',
+      text: "Ing. en Informática",
+      type: 'warning',
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: '¡perfecto!',
+      buttonsStyling: true
+    })
+
   }
 }
